@@ -1,0 +1,39 @@
+article p{
+    word-wrap:break-word;
+}
+
+#actions{
+    width:40%;
+    margin:5% 30% 5% 30%;
+
+    text-align:center;
+}
+
+#actions form{
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    gap:3%;
+}
+
+#actions form input{
+    border:none;
+}
+
+#actions form input[type="text"]{
+    width:35%;
+    box-sizing:border-box;
+}
+
+#actions form input[type="submit"]{
+    padding:1.5% 5% 1.5% 5%;
+
+    color:white;
+    font-weight:800;
+}
+
+#actions form #edit{
+    cursor:pointer;
+    border-radius:15px;
+    background-color:rgb(65, 65, 65);
+}

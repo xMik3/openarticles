@@ -1,0 +1,60 @@
+form{
+    margin: 2.5% 0% 2.5% 0%;
+    display:grid;
+    grid-template-rows: 7fr 1fr;
+}
+
+p{
+    font-family:'Times New Roman', Times, serif;
+}
+
+.half{
+    display:grid;
+    grid-template-rows: 1fr 5fr 1fr;
+    gap:15px;
+}
+
+.whole{
+    display:flex;
+    flex-direction: row;
+    justify-content:left;
+    gap:3%;
+}
+
+.submit{
+    margin: 0% 42.5% 0% 42.5%;
+    padding: 1%;
+    width:15%;
+
+    font-weight:600;
+    color:white;
+    background-color: rgb(17, 47, 147);
+
+    border-radius:10px;
+    border:none;
+
+    cursor:pointer;
+}
+
+#labels{
+    font-weight:600;
+    text-align:center;
+}
+
+
+#title{
+    width:100%;
+    margin-bottom:1%;
+}
+
+#article{
+    resize:none;
+    width:100%;
+    height:auto;
+}
+
+#delete{
+    background-color:rgb(181, 0, 0);
+}
+
+

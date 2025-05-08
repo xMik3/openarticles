@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+
+        <meta charset="utf-8">
+        <title>openarticles.</title>
+        <link rel="stylesheet" href="/styles/main.css">
+        <link rel="stylesheet" href="/styles/article.css">
+
+    </head>
+
+    <body>
+
+        <header>
+            <h1><a href="/">open<span style="color:rgb(220, 0, 0)">a</span>rticles.</a></h1>
+            <nav>
+                <a id="post" href="/post">post an article</a>
+            </nav>
+        </header>
+        
+        <main>
+            <h2><%= post.title %></h2>
+            <article>
+                <% 
+
+                    let lines = post.content.split("\n");
+
+                    for(let i=0;i<lines.length;i++){
+ 
+                %>
+                <p>
+                    <%= lines[i] %>
+                </p>
+                <%
+
+                    }
+
+                %>
+            </article>
+        </main>
+
+        <div id="actions">
+            <div>
+                <h5>Enter the post ID provided to delete or edit</h3>
+            </div>
+            <form action="/articles/<%= post.postid %>/edit" method="post">
+                <input type="text" name="key" maxlength="36" required>
+                <input id="edit" type="submit" value="Edit Post">        
+            </form>
+        </div>
+
+        <footer>
+            Copyright &#169; openarticles. 2025 
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>openarticles.</title>
+        <link rel="stylesheet" href="/styles/main.css">
+        <link rel="stylesheet" href="/styles/post.css">
+    </head>
+
+    <body>
+        <header>
+            <h1><a href="/">open<span style="color:rgb(220, 0, 0)">a</span>rticles.</a></h1>
+        </header>
+
+        <main>
+            <h2>edit article</h2>
+            <form action="/articles/<%= post.postid %>/edit/update" method="post">
+                <div class="whole">
+                    <div id="labels" class="half">
+                        <label>Title : </label>
+                        <label>Article : </label> 
+                    </div>
+                    <div class="half">
+                        <input id="title" type="text" maxlength="100"  name="title" value="<%= post.title %>" required>
+                        <textarea id="article" rows="9" cols="100" name="content" required><%= post.content %></textarea>
+                    </div>
+                </div>
+                <input type="hidden" name="key" value="<%= post.key %>">
+                <input class="submit" type="submit" value="Apply Changes">
+            </form>
+            <form action="/articles/<%= post.postid %>/edit/delete" method="post">
+                <input type="hidden" name="key" value="<%= post.key %>">
+                <input id="delete" class="submit" type="submit" value="Delete Post">
+            </form>
+        </main>
+
+        <footer>
+            Copyright &#169; openarticles 2025  
+        </footer>
+    </body>
+</html>

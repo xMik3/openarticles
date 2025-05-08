@@ -1,0 +1,64 @@
+body{
+    background-color: rgb(17, 47, 147);
+    font-family: Helvetica, sans-serif;
+    color:white;
+}
+
+header{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+
+    align-items:center;
+    margin: 2% 5% 2% 5%;
+}
+
+main{
+    padding:3%;
+    background-color: white;
+    border-radius:10px;
+    color:black;
+
+    margin: 3% 20% 3% 20%;
+}
+
+footer{
+    text-align:center;
+    margin: 4% 5% 4% 5%;
+}
+
+header a{
+    color:white;
+    text-decoration: none;
+}
+
+header #post{
+    font-weight:550;
+}
+
+header h1{
+    font-weight: 925;
+}
+
+main h2{
+    color: rgb(17, 47, 147);
+    font-size:28px;
+    font-weight:750;
+    margin-top:0%;
+    padding-top:0%;
+}
+
+ul li{
+    margin-bottom:2%;
+    padding-right:0%;
+
+    font-size:24px;
+}
+
+ul li a{
+    color: black;
+    font-weight:650;
+}
+
+
+
