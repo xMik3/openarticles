@@ -2,7 +2,7 @@ import express from "express";
 import ShortUniqueId from "short-unique-id";
 
 const app = express();
-const port = 5069;
+const port = 80;
 
 let posts = [];
 
